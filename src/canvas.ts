@@ -58,7 +58,7 @@ class Canvas {
         });
     }
 
-    /** Draw the square from the grid with a sample result >= 1. */
+    /** Draw the squares of the grid with a sample result >= 1. */
     draw() {
         this._context.fillStyle = SQUARE_COLOR;
 
