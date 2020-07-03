@@ -1,11 +1,11 @@
-const webpack = require("webpack");
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require('webpack');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 let config = {
-  entry: "./src/index.ts",
-  mode: "development",
-  devtool: "eval-source-map",
+  entry: './src/index.ts',
+  mode: 'development',
+  devtool: 'eval-source-map',
   module: {
     rules: [
       {
@@ -17,12 +17,12 @@ let config = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
+          loader: 'babel-loader'
         }
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
@@ -31,11 +31,11 @@ let config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./index.html"
+      template: './index.html'
     })
   ],
   output: {
-    filename: "bundle.js"
+    filename: 'bundle.js'
   },
 }
 
