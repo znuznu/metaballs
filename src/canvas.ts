@@ -1,7 +1,9 @@
 import { SQUARE_COLOR, SQUARE_SIZE } from './constants';
 import Metaball from './metaball';
 
-/** Represent the Canvas containing the Metaballs. */
+/** 
+ * Represent the Canvas containing the Metaballs. 
+ */
 class Canvas {
     private _width: number;
     private _height: number;
@@ -9,6 +11,11 @@ class Canvas {
     private _metaballs: Metaball[];
     private _grid: number[][];
 
+    /**
+     * @constructor
+     * @param context - The Canvas rendering context
+     * @param metaballs - The metaballs contained in this Canvas
+     */
     constructor(context: CanvasRenderingContext2D, metaballs: Metaball[]) {
         this._width = context.canvas.width;
         this._height = context.canvas.height;
@@ -40,7 +47,9 @@ class Canvas {
         }, 10)        
     }
 
-    /** Move the Metaballs and handle the collision with the Canvas limits. */
+    /** 
+     * Move the Metaballs and handle the collision with the Canvas limits. 
+     */
     moveMetaballs() {
         this._metaballs.forEach(m => {
             let xNext = m.x + m.dx;
@@ -58,7 +67,9 @@ class Canvas {
         });
     }
 
-    /** Draw the squares of the grid with a sample result >= 1. */
+    /** 
+     * Draw the squares of the grid with a sample result >= 1. 
+     */
     draw() {
         this._context.fillStyle = SQUARE_COLOR;
 
