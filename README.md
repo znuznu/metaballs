@@ -1,5 +1,6 @@
 # metaballs
-A quick TypeScript 2D metaballs implementation. 
+A quick TypeScript 2D metaballs implementation.  
+See the demo [here](https://znuznu.github.io/metaballs/).  
 
 ![example](./example.png)  
 
