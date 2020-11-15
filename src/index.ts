@@ -6,10 +6,10 @@ import Metaball from './metaball';
 /**
  * Generate Metaballs with random attributes.
  * 
- * @param context - The HTML Canvas context
- * @param quantity - The quantity of Metaballs
+ * @param context   - The HTML Canvas context
+ * @param quantity  - The quantity of Metaballs
  */
-function generateMetaballs(context: CanvasRenderingContext2D, quantity: number) {
+function generateMetaballs(context: CanvasRenderingContext2D, quantity: number): Metaball[] {
     let metaballs: Metaball[] = [];
 
     for (let m = 0; m < quantity; m++) {

@@ -1,5 +1,6 @@
 /** 
  * Represent a Circle moving around and attracted to other Metaballs. 
+ * 
  */
 class Metaball {
     x: number;
@@ -11,10 +12,10 @@ class Metaball {
 
     /**
      * @constructor
-     * @param x - x position of this Metaball
-     * @param y - y position of this Metaball
-     * @param radius - Radius of this Metaball
-     * @param color - Color of this Metaball
+     * @param x         - x position of this Metaball
+     * @param y         - y position of this Metaball
+     * @param radius    - Radius of this Metaball
+     * @param color     - Color of this Metaball
      */
     constructor(x: number, y: number, radius: number, color: string) {
         this.x = x;
