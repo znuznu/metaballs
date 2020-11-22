@@ -93,7 +93,7 @@ class Canvas {
     }
 
     /**
-     * Add up the value from each Metaball.
+     * Add up the value of each Metaball.
      * 
      * @param x         - The x position from the square (center)
      * @param y         - The y position from the square (center)
